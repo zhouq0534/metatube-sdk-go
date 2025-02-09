@@ -60,21 +60,7 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           tags: |
-            metatube-server:dev-${{ steps.shell.outputs.version }}
+            devilszhou/metatube-server:dev
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-      - name: Build and Push (latest)
-        if: startsWith(github.ref, 'refs/tags/')
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          file: Dockerfile
-          push: true
-          platforms: linux/amd64,linux/arm64
-          
-          tags: |
-            metatube-server:latest
-            metatube-server:${{ steps.shell.outputs.version }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
