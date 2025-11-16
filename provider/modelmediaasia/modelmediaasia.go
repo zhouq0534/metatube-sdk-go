@@ -33,7 +33,7 @@ var (
 
 const (
 	Name     = "ModelMediaAsia"
-	Priority = 1000 // Disabled by default, use `export MT_PROVIDER_MODELMEDIAASIA__PRIORITY=1000` to enable.
+	Priority = 1020 // Disabled by default, use `export MT_PROVIDER_MODELMEDIAASIA__PRIORITY=1000` to enable.
 )
 
 const (
