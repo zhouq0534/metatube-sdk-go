@@ -12,6 +12,7 @@ func TestJavBus_GetMovieInfoByID(t *testing.T) {
 		"SSNI-776",
 		"ABP-331",
 		"CEMD-232",
+		"SNOS-401",
 		"th101-000-110942",
 	})
 }
@@ -20,5 +21,6 @@ func TestJavBus_SearchMovie(t *testing.T) {
 	testkit.Test(t, New, []string{
 		"SSIS-033",
 		"MIDV-005",
+		"SNOS-401",
 	})
 }
