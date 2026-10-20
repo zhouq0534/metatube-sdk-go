@@ -43,7 +43,7 @@ func New() *MadouQu {
 }
 
 func (mdq *MadouQu) SetRequestTimeout(_ time.Duration) {
-	mdq.Scraper.SetRequestTimeout(10 * time.Second) // force timeout setting.
+	mdq.Scraper.SetRequestTimeout(45 * time.Second) // madouqu.com can be slow behind Cloudflare.
 }
 
 func (mdq *MadouQu) GetMovieInfoByID(id string) (info *model.MovieInfo, err error) {
